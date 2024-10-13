@@ -423,6 +423,8 @@ img {
 
 .png__size{
   width: 100px;
+  height: auto;
+  margin: auto;
 }
 /* SKills*/
 
@@ -871,3 +873,4 @@ img {
     right: 3rem;
   }
 }
+
