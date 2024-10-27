@@ -33,14 +33,28 @@ const blurHeder = () =>{
 
 window.addEventListener('scroll', blurHeder)
 
-const contactForm = document.getElementById('contact-form'),
-      contactMessaage = document.getElementById('contact-message')
+/*EMAIL JS*/
+const contactForm = document.getElementById('contact-form');
+const contactMessage = document.getElementById('contact-message');
 
-const sendEmail = (e) =>{
-    e.preventDefaylt()
+const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_x64k8sx', 'template_4kr4fdn', '#contact-form', 'MaiIQG6OqCM0clyO0')
+        .then(() => {
+            contactMessage.textContent = 'ส่งข้อความเสร็จแล้ว';
+
+            setTimeout(() => {
+                contactMessage.textContent = '';
+            }, 5000);
+
+            contactForm.reset();
+        }, () => {
+            contactMessage.textContent = 'ไม่สามารถข้อความไปได้';
+        });
 }
 
-contactForm.addEventListener('submit', sendEmail)
+contactForm.addEventListener('submit', sendEmail);
 
 const scrollUp = () => {
     const scrollUp = document.getElementById("scroll-up")
