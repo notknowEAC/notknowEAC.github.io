@@ -124,7 +124,7 @@ img {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .section {
@@ -441,6 +441,7 @@ img {
   grid-template-columns: repeat(3, max-content);
   justify-content: space-around;
   align-items: flex-end;
+  margin-left: 50cap;
 }
 
 .skills__box{
@@ -874,3 +875,6 @@ img {
   }
 }
 
+.info__title{
+  margin: 100px;
+}
