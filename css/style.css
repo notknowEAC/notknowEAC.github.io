@@ -388,7 +388,8 @@ img {
 }
 
 .about__img{
-  width: 400px;
+  width: 500px;
+  height: 400px;
   mask-image: linear-gradient(to bottom,hsla(var(--hue), 40%, 16%) 60%, transparent 100%);
 
 }
@@ -408,7 +409,7 @@ img {
 .experience__company{
   font-size: var(--h2-font-size);
   font-weight: var(--font-bold);
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .experience__profession{
@@ -442,7 +443,7 @@ img {
   grid-template-columns: repeat(3, max-content);
   justify-content: space-around;
   align-items: flex-end;
-  margin-left: 500px;
+  margin-left: 50px;
 }
 
 .skills__box{
@@ -653,7 +654,13 @@ img {
 
   .skills__content{
     grid-template-columns: repeat(2, max-content);
-    margin-left: 200px;
+    margin-left: 100px;
+  }
+  .img_ro{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 1%;
   }
 }
 
@@ -712,11 +719,17 @@ img {
       grid-template-columns: repeat(5, max-content);
       justify-content: initial;
       column-gap: 4rem;
-      margin-left: 100px;
+      margin-left: 600px;
     }
 
     .services__container{
       grid-template-columns: repeat(2, 320px);
+    }
+    .img_ro{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-left: 15%;
     }
 }
 
@@ -813,7 +826,6 @@ img {
   }
   .experience__company{
     font-size: var(--h1-font-size);
-    margin-right: 500px;
   }
 
   .experience__profession{
@@ -825,7 +837,7 @@ img {
   }
   .skills__content{
     grid-template-columns: repeat(6, max-content);
-    margin-left: 600px;
+    margin-left: 500px;
   }
 
   .services__container{
@@ -884,11 +896,9 @@ img {
   margin: 100px;
 }
 .img_ro{
-  display: flex;
-  flex-direction: row;
   gap: 20px;
-  margin-left: 22.5%;
+  margin-left: 15%;
 }
 .title{
-  margin-left: 20%;
+  margin-left: 10%;
 }
