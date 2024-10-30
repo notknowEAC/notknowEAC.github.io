@@ -388,10 +388,12 @@ img {
 }
 
 .about__img{
-  width: 250px;
-  justify-self: center;
-  mask-image: linear-gradient(to bottom,hsla(var(--hue), 40%, 16%) 60%, transparent 100%);
-}
+  display:flex;
+  flex-direction: row;
+    width: 400px;
+    justify-self: center;
+    mask-image: linear-gradient(to bottom,hsla(var(--hue), 40%, 16%) 60%, transparent 100%);
+  }
 
 .about__button{
   width: 100%;
@@ -792,7 +794,7 @@ img {
   }
 
   .about__img{
-    width: 320px;
+    width: 650px;
   }
   .about__description{
     margin-bottom: 3rem;
