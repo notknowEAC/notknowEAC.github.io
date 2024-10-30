@@ -353,7 +353,11 @@ img {
 .work__link:hover i{
   transform: translateX(.5rem);
 }
-
+.meow_meow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .info__container{
   row-gap: 3rem;
 }
