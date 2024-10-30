@@ -442,7 +442,7 @@ img {
   grid-template-columns: repeat(3, max-content);
   justify-content: space-around;
   align-items: flex-end;
-  margin-left: 800px;
+  margin-left: 500px;
 }
 
 .skills__box{
